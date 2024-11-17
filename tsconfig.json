@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "ESNext",
+      "moduleResolution": "node",  // or "nodenext"
+      "jsx": "react",
+      "declaration": true,
+      "declarationDir": "dist/types",
+      "outDir": "dist",
+      "esModuleInterop": true,
+      "strict": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", ".storybook", "**/*.stories.tsx"]
+    }
+  
