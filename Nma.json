@@ -1,0 +1,18 @@
+[
+  {"name": "Caffeine", "Smile": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"},
+  {"name": "Aspirin", "Smile": "CC(=O)OC1=CC=CC=C1C(=O)O"},
+  {"name": "Cholesterol", "Smile": "CC(C)CCCC(C)C(=O)OCC(C)CCCC(C)C(=O)OCC(C)C"},
+  {"name": "Testosterone", "Smile": "CC1=CC(=O)C2=C1C(=O)C3=CC(=O)C4=C3C(=O)C2=C4C"},
+  {"name": "Penicillin", "Smile": "CC1(C(=O)N2C(=O)N(C2=C1)C3=CC(=O)O3)C"},
+  {"name": "Morphine", "Smile": "CN1CCC23C4CC5C6C(C1=CC=CC23C5)C4=O"},
+  {"name": "Tetracycline", "Smile": "C1CC(C(=O)OCC2=CC(=O)N(C2=CC=C(C=C3)C4C=O)C5=CC=C3C(=O)O5)C6=CC=CC(=O)O1"},
+  {"name": "Erythromycin", "Smile": "C1CC(C(=O)OCC2=CC(=O)N(C2=CC=C(C=C3)C4C=O)C5=CC=C3C(=O)O5)C6=CC=CC(=O)O1"},
+  {"name": "Insulin", "Smile": "CC(C(=O)O)C1CCC2C(C3CCC4C(C2=O)C(=O)O4)C1C(CO)C(=O)O"},
+  {"name": "Adrenaline", "Smile": "C1=CC(=O)C2=C1C(=O)C3=CC(=O)C4=C3C(=O)C2=C4C"},
+  {"name": "Ritalin", "Smile": "CC(C(=O)OC1=CC=CC=C1C(=O)O)C"},
+  {"name": "Tamoxifen", "Smile": "CC(C1=CC=CC(=O)C1)C2=CC(=O)C3=C2C(=O)C4=C3C(=O)C5=C4C(=O)C6=C5"},
+  {"name": "Diazepam", "Smile": "CC(C1=CC=CC=C1)C2=CC(=O)N(C2)C(=O)O"},
+  {"name": "Vincristine", "Smile": "C1=CC2=C(C=C1C3=CC(=C(C=C3)C)O)C(=O)N2C(=O)O"},
+  {"name": "Paclitaxel", "Smile": "C1=CC(=O)C2=C1C(=O)C3=C2C(=O)C4=C3C(=O)C5=C4C(=O)C"},
+  {"name": "Estradiol", "Smile": "C1CCC2=C(C1=O)C(=O)C3C2(C(=O)C4C(C(=O)O4)C(=O)O)C"}
+]
