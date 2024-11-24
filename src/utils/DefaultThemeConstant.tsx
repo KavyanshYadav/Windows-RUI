@@ -2,6 +2,15 @@
 import { ThemeStyle } from "../types/ThemeStyleType";
 
 const sampleTheme: ThemeStyle = {
+  Accent:{
+      "LightOne": "#5CC0FF",
+      "LightTwo": "#84E8FF",
+      "LightThree": "#ACFFFF",
+      "DarkOne": "#0C70B3",
+      "DarkTwo": "#00488B",
+      "DarkThree": "#002063"
+  },
+
   typography: {
     fontFamily: 'Roboto, sans-serif',  // A commonly used font in Material UI
     fontSize: '14px',
@@ -12,7 +21,7 @@ const sampleTheme: ThemeStyle = {
     letterSpacing: '0.015em',
   },
   colors: {
-    primary: '#6200ea',  // Purple
+    primary: '#8241D3',  // Purple
     secondary: '#b00020',  // Teal
     error: '#b00020',  // Red
     background: '#f5f5f5',  // Light Gray for background

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import {Card} from  "./Card"
-import Button from '../Button';
-import { useTheme } from 'storybook/internal/theming';
+import Button from '../Button/Button';
+import { useTheme } from '../../hooks/useThemeHook';
 export default {
     title: 'Components/Card',
     component: Card,
@@ -23,7 +23,7 @@ export default {
       </Card.Body>
       <Card.Footer justifyContent="flex-end">
         <Button variant="primary" onClick={()=>{}}>View</Button>
-        <Button onClick={()=>{}}>Join</Button>
+        <Button onClick={()=>{theme.setThemeStyle({colors:{primary:"#d23737"}})}}>Join</Button>
       </Card.Footer>
     </Card.Root>
    )

@@ -123,17 +123,19 @@ var useTheme = function () {
 };
 
 var Input = function (_a) {
-    var value = _a.value, onChange = _a.onChange, placeholder = _a.placeholder, _b = _a.disabled, disabled = _b === void 0 ? false : _b, props = __rest(_a, ["value", "onChange", "placeholder", "disabled"]);
+    var value = _a.value, onChange = _a.onChange, placeholder = _a.placeholder, _b = _a.disabled, disabled = _b === void 0 ? false : _b, Icon = _a.Icon, props = __rest(_a, ["value", "onChange", "placeholder", "disabled", "Icon"]);
     var theme = useTheme();
-    ({
-        '--inputback-color': theme.themeStyles.colors.secondary,
-        backgroundColor: 'var(--inputback-color)',
-    });
-    return (React.createElement("div", __assign({ className: 'input-wrapper' }, props),
-        React.createElement("div", { className: 'inputback', style: {
-                '--inputback-color': theme.themeStyles.colors.secondary,
-            } }),
-        React.createElement("input", __assign({ className: "input", type: "text", value: value, onChange: onChange, placeholder: placeholder, disabled: disabled }, props))));
+    console.log(theme.theme);
+    var inputBackStyle = {
+        '--input-backgroundcolor': theme.theme == "light" ? "#FEFEFE" : "#2D2D2D",
+        '--inputback-color': theme.themeStyles.colors.primary,
+        '--input-radius': theme.themeStyles.breakpoints.lg
+    };
+    return (React.createElement("div", __assign({ className: "input-wrapper", style: inputBackStyle }, props),
+        React.createElement("div", { className: "inputback" }),
+        React.createElement("input", { className: "input", type: "text", value: value, onChange: onChange, placeholder: placeholder, disabled: disabled }),
+        Icon ?
+            React.createElement("div", { className: 'inputIconHolder' }, Icon && React.createElement("div", { className: "icon" }, Icon)) : ""));
 };
 
 var CardRoot = function (_a) {

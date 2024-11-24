@@ -61,3 +61,53 @@
 .input-wrapper:hover .inputback {
   background-color: beige;
 }
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 20rem;
+  display: flex;
+  background-color: var(--input-backgroundcolor);
+  align-items: center;
+  height: 100%;
+}
+.input-wrapper:focus-within .inputback {
+  display: block;
+}
+
+.inputIconHolder {
+  background-color: var(--input-backgroundcolor);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.412rem;
+  justify-self: stretchs;
+  border-radius: 0rem 0.3rem 0.3rem 0rem;
+  z-index: 1;
+}
+
+.input {
+  color: aquamarine;
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: var(--input-backgroundcolor);
+  border: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.inputback {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0.15rem;
+  display: none;
+  border-radius: 0.3rem;
+  background-color: var(--inputback-color);
+  transition: background-color 0.3s ease;
+}

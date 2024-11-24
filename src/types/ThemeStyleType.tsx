@@ -1,3 +1,15 @@
+
+  export interface AccentColor {
+    LightOne: string;
+    LightTwo:string;
+    LightThree:string;
+    DarkOne:string;
+    DarkTwo:string;
+    DarkThree:string;
+  }
+
+
+
 export interface ThemeTypography {
     fontFamily: string;
     fontSize: string;
@@ -56,6 +68,7 @@ export interface ThemeTypography {
   }
   
   export interface ThemeStyle {
+    Accent:AccentColor;
     typography: ThemeTypography;
     colors: ThemeColors;
     spacing: ThemeSpacing;

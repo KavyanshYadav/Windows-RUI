@@ -27,6 +27,7 @@ const Template: ComponentStory<typeof Input> = (args: InputProps) => {
   }, [])
   
   return (
+    <>
     <Input
       {...args}
       value={value}
@@ -37,7 +38,21 @@ const Template: ComponentStory<typeof Input> = (args: InputProps) => {
       Icon={<div>name</div>}
       onClick={()=>{
       }}
-    />
+      />
+      <Input
+      {...args}
+      value={value}
+      onChange={(e) => {
+        setValue(e.target.value);
+        args.onChange && args.onChange(e);
+      }}
+      Icon={<div>name</div>}
+      onClick={()=>{
+        theme.setThemeStyle({colors:{primary:"red"}})
+      }}
+      />
+
+      </>
   );
 };
 

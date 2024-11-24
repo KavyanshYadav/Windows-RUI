@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/react";
 import {ThemeProvider} from "../src/hooks/useThemeHook"
 import { Decorator } from '@storybook/react';
 import React from "react";
+import '../src/normalize.css'
 
 const withThemeProvider: Decorator= (Story) => (
   <ThemeProvider>
